@@ -13,13 +13,13 @@ app = FastAPI()
 
 origins = ["*"]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allo_headers=["*"]
-)
+#app.add_middleware(
+#    CORSMiddleware,
+#    allow_origins=origins,
+#    allow_credentials=True,
+#    allow_methods=["*"],
+#    allo_headers=["*"]
+#)
      
 app.include_router(post.router)
 app.include_router(user.router)
